@@ -1,0 +1,15 @@
+name: Deploy Live by tag
+
+on:
+  release:
+     types: [published]
+     
+jobs:
+  live-deploy:
+       
+    runs-on: ubuntu-latest
+    if: ${{ contains(github.ref, '!Stage') }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy Live by tag
+        run: echo "Deploy Live by tag"
