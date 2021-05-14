@@ -8,7 +8,7 @@ jobs:
   live-deploy:
        
     runs-on: ubuntu-latest
-    if: ${{ contains(github.ref, '!Stage') }}
+    if: ${{ !contains(github.ref, 'Stage') }}
     steps:
       - uses: actions/checkout@v2
       - name: Deploy Live by tag
