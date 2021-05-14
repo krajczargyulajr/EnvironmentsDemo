@@ -3,8 +3,10 @@ name: Deploy Stage by tag
 on:
   release:
      types: [published]
-
+     
 jobs:
+  stage-deploy:
+       
     runs-on: ubuntu-latest
     if: ${{ github.ref == 'refs/tags/*Stage*' }}
     steps:
