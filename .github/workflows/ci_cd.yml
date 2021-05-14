@@ -39,3 +39,15 @@ jobs:
     steps:
       - name: Deploy
         run: echo Yaay, dev deploy!
+
+  DeployToStage:
+    name: Deploy to Stage
+    runs-on: ubuntu-latest
+    if: github.event.ref == 'refs/head/main'
+    needs: [DeployToDev]
+    environment:
+      name: Stage
+      url: 'http://bracketlines.net'
+    steps:
+      - name: Deploy
+        run: echo Yaay, stage deploy!
