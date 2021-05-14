@@ -43,7 +43,7 @@ jobs:
   DeployToStage:
     name: Deploy to Stage
     runs-on: ubuntu-latest
-    if: github.event.ref == 'refs/head/main'
+    if: github.event.ref == 'refs/heads/main'
     needs: [DeployToDev]
     environment:
       name: Stage
