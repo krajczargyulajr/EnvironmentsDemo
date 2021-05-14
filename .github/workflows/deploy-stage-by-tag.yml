@@ -1,0 +1,13 @@
+name: Deploy Stage by tag
+
+on:
+  release:
+     types: [published]
+
+jobs:
+    runs-on: ubuntu-latest
+    if: ${{ github.ref == 'refs/tags/*Stage*' }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Deploy Stage by tag
+        run: echo "Deploy Stage by tag"
