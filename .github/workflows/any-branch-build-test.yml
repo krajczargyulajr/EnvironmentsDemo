@@ -1,0 +1,25 @@
+name: "Feature Branch: Build & Test"
+on: 
+    push:
+        branches:
+            - '**'
+            - '!devel'
+            - '!*release*'
+            - '!*hotfix*'
+            - '!main'
+    workflow_dispatch:
+    
+jobs:
+  feature-branch-build-test:
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Feature Branch: Build & Test
+        run: echo "Feature Branch: Build & Test"
+        
+        
+        
+        
+        
+        

@@ -1,0 +1,22 @@
+name: "Stage: Build & Test"
+on: 
+    push:
+        branches:
+            - '*release*'
+            - '*hotfix*'
+    workflow_dispatch:
+            
+jobs:
+  stage-branch-build-test:
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Stage: Build & Test
+        run: echo "Stage: Build & Test"
+        
+        
+        
+        
+        
+        

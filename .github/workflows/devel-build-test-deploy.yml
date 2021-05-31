@@ -1,0 +1,21 @@
+name: "Devel: Build & Test & Deploy"
+on: 
+    push:
+        branches:
+            - devel
+    workflow_dispatch:
+
+jobs:
+  devel-build-test-deploy:    
+  
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Devel: Build & Test & Deploy
+        run: echo "Devel: Build & Test & Deploy"
+        
+        
+        
+        
+        
+        
