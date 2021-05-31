@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Feature Branch Build and Test
-        run: echo "Feature Branch: Build & Test"
+        run: echo "Feature Branch Build and Test"
         
         
         

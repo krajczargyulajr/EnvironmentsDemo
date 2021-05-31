@@ -13,7 +13,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Stage Build and Test
-        run: echo "Stage: Build & Test"
+        run: echo "Stage Build and Test"
         
         
         
