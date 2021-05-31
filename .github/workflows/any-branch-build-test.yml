@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Feature Branch: Build & Test
+      - name: Feature Branch Build and Test
         run: echo "Feature Branch: Build & Test"
         
         

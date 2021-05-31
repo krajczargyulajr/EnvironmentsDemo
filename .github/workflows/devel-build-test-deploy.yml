@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Devel: Build & Test & Deploy
+      - name: Devel Build and Test and Deploy
         run: echo "Devel: Build & Test & Deploy"
         
         
